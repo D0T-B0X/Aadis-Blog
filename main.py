@@ -13,9 +13,9 @@ from forms import CreatePostForm, RegisterUser, LogIn, Comment
 from smtplib import SMTP
 from os import environ
 
-sender = environ['SENDER']
-sender_pass = environ['SENDER_PASS']
-receiver = environ['RECEIVER']
+sender = "pythontest122@outlook.com"
+sender_pass = "knsp2793"
+receiver = "aadikeshu2305@gmail.com"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
