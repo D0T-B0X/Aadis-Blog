@@ -13,10 +13,6 @@ from forms import CreatePostForm, RegisterUser, LogIn, Comment
 from smtplib import SMTP
 from os import environ
 
-sender = environ['SENDER']
-sender_pass = environ['SENDER_PASS']
-receiver = environ['RECEIVER']
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
@@ -184,10 +180,10 @@ with app.app_context():
             message = request.form['message']
             with SMTP(host="smtp-mail.outlook.com", port=587) as connection:
                 connection.starttls()
-                connection.login(user=sender, password=sender_pass)
+                connection.login(user="pythontest122@outlook.com", password="knsp2793")
                 connection.sendmail(
-                    from_addr=sender,
-                    to_addrs=receiver,
+                    from_addr="pythontest122@outlook.com",
+                    to_addrs="aadikeshu2305@gmail.com",
                     msg=f"Subject: New message from Blog! \n\nname: {name}\nemail: {email}\nphone: {phone}\nmessage: {message}"
                 )
             flash("Message successfully sent")
