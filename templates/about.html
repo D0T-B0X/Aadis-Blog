@@ -1,0 +1,31 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Hello There, welcome to my Blog. I made this blog as a capstone project for my python course. Gotta say this was one of my toughest projects yet.</p>
+        <p>While you're here, you might as well leave some comments on the blog posts and check out my socials (they are the black buttons on the bottom of the page)</p>
+        <p>I hope you enjoy the Blog. If you find any issues or improvements be sure to message me using the "Contact Me" section of this website. You can access it from the navbar at the top.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
