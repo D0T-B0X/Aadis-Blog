@@ -3,7 +3,7 @@ gunicorn==22.0.0
 chardet
 click
 dominate
-Flask
+Flask==2.3.3
 Flask-Bootstrap
 Flask-CKEditor
 Flask-Gravatar
